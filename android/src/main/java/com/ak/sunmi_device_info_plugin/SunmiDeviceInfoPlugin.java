@@ -44,7 +44,7 @@ public class SunmiDeviceInfoPlugin implements FlutterPlugin, MethodCallHandler {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
     }
     else if(call.method.equals("getSunmiSerialNo")) {
-      result.success("Sunmi serial number " +serialNumber());
+      result.success(serialNumber());
     } else {
       result.notImplemented();
     }
