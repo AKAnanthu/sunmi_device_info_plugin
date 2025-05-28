@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.ak.sunmi_device_info_plugin">
+
+    <uses-permission android:name="android.permission.SUNMI_RESET_APPS" />
+    <uses-permission android:name="android.permission.SUNMI_UPDATE_CERT" />
+
+    <!-- Ensure access to CustomerService component when targetSDK>30 -->
+    <queries>
+        <package android:name="com.sunmi.tmservice" />
+    </queries>
+</manifest>

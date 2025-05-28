@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunmi.tms" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.SUNMI_RESET_APPS" />
+    <uses-permission android:name="android.permission.SUNMI_UPDATE_CERT" />
+
+    <!-- 确保客户应用targetSDK>30时能访问CustomerService组件 -->
+    <queries>
+        <package android:name="com.sunmi.tmservice" />
+    </queries>
+
+</manifest>
